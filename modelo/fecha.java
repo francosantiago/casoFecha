@@ -48,4 +48,10 @@ public class fecha
         return dia + "/" + mes + "/" + anio;
     }
 
+    public boolean equals(Object obj)
+    {
+        fecha otra = (fecha)obj;
+        return (dia==otra.dia) && (mes==otra.mes) && (anio==otra.anio);
+    }
+
 }

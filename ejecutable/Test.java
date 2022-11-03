@@ -17,5 +17,20 @@ public class Test
         System.out.println("Año = " + f.getAnio());
         System.out.println(f);
         
+        fecha otra = new fecha();
+        otra.setDia(0);
+        otra.setAnio(1990);
+        otra.setMes(11);
+
+        if (f.equals(otra))
+        {
+            System.out.println("Las fechas son iguales.");
+        }
+        else
+        {
+            System.out.println("Las fechas son diferentes.");
+        }
+        
+
     }
 }
