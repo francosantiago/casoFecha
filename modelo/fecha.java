@@ -35,6 +35,23 @@ public class fecha
 
     public fecha(String s)
     {
+        //BUSCAMOS LA PRIMERA OCURRENCIA DE /
+        int pos1 = s.indexOf('/');
+
+        //BUSCAMOS LA ULTIMA OCURRENCIA DE /
+        int pos2 = s.lastIndexOf('/');
+
+        //EXTRAEMOS EL DIA
+        String sDia = s.substring(0, pos1);
+        dia = Integer.parseInt(sDia);
+
+        //EXTRAEMOS EL MES
+        String sMes = s.substring(pos1+1, pos2);
+        mes = Integer.parseInt(sMes);
+
+        //EXTRAEMOS EL AÑO
+        String sAnio = s.substring(pos2+1);
+        anio = Integer.parseInt(sAnio);
 
         
 
