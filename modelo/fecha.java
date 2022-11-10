@@ -9,6 +9,17 @@ public class fecha
     private int mes;
     private int anio;
 
+    //METODOS
+
+    public fecha(int d, int m, int a)
+    {
+
+        this.dia = d;
+        this.mes = m;
+        this.anio = a;
+        
+    }
+
     //METODOS DE ACCESO(setter y getter)
 
     public void setAnio(int anio) 

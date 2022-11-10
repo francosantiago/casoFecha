@@ -7,7 +7,7 @@ public class Test
     public static void main(String[] args) 
     {
 
-        fecha f = new fecha();
+        fecha f = new fecha(2,10,1970);
         f.setDia(2);
         f.setMes(10);
         f.setAnio(1970);
@@ -17,7 +17,7 @@ public class Test
         System.out.println("Año = " + f.getAnio());
         System.out.println(f);
         
-        fecha otra = new fecha();
+        fecha otra = new fecha(0,11,1990);
         otra.setDia(0);
         otra.setAnio(1990);
         otra.setMes(11);
