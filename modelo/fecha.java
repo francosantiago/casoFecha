@@ -17,7 +17,27 @@ public class fecha
         this.dia = d;
         this.mes = m;
         this.anio = a;
+
+    }
+
+    //CONSTRUCTOR SIN PARAMETROS
+
+    public fecha()
+    {
+
+        this.dia = 0;
+        this.mes = 0;
+        this.anio = 0;
+
+    }
+
+    //CONSTRUCTOR CON PARAMETROS DE STRING
+
+    public fecha(String s)
+    {
+
         
+
     }
 
     //METODOS DE ACCESO(setter y getter)
