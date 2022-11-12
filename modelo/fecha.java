@@ -102,4 +102,18 @@ public class fecha
         return (dia==otra.dia) && (mes==otra.mes) && (anio==otra.anio);
     }
 
+    public void addDIas(int d)
+    {
+        
+    }
+
+    private int fechaToDias()
+    {
+        return
+    }
+
+    private void diasToFecha(int i)
+    {
+
+    }
 }
