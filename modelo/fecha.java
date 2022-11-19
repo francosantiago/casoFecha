@@ -105,7 +105,7 @@ public class fecha
     public void addDIas(int d)
     {
         int sum = fechaToDias() + d;
-        diasToFecha(sum);a
+        diasToFecha(sum);
 
     }
 
@@ -116,7 +116,7 @@ public class fecha
 
     private void diasToFecha(int i)
     {
-        int anio = (d / 360);
-        int mes = (i - (anio * 360)
+        int anio = (i / 360);
+        int mes = i - (anio * 360);
     }
 }
