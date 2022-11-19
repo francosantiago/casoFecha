@@ -3,9 +3,9 @@ package modelo;
 public class Fecha {
 
     // Atributos
-    private int dia;
-    private int mes;
-    private int anio;
+    protected int dia;
+    protected int mes;
+    protected int anio;
 
     // Metodos
     // Constructor con 3 parametros
@@ -89,7 +89,7 @@ public class Fecha {
     private void diasToFecha(int i)
     {
         anio = (int)(i/360);
-        mes = (int)(i%360);
-        dia = (int)(i/30);
+        mes = (int)((i/360)%30);
+        dia = (int)(i%30%30);
     }
 }
