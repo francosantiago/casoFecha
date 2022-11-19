@@ -1,7 +1,11 @@
 package modelo;
 
-public class Fecha {
 
+public class Fecha 
+{
+
+    public static final String YEAR = null;
+    public static final String MONTH = null;
     // Atributos
     protected int dia;
     protected int mes;
@@ -92,4 +96,14 @@ public class Fecha {
         mes = (int)((i/360)%30);
         dia = (int)(i%30%30);
     }
+
+    public static Fecha getInstance() {
+        return null;
+    }
+
+    public int get(String year2) {
+        return 0;
+    }
+
+  
 }
