@@ -1,38 +1,39 @@
 package ejecutable;
 
-import modelo.fecha;
+import modelo.Fecha;
 
-public class Test 
-{
-    public static void main(String[] args) 
-    {
-
-        fecha f = new fecha(2,10,1970);
-        f.setDia(2);
-        f.setMes(10);
-        f.setAnio(1970);
-
-        System.out.println("Dia = " + f.getDia());
-        System.out.println("Mes = " + f.getMes());
-        System.out.println("Año = " + f.getAnio());
+public class Test {
+    public static void main(String[] args) {
+        Fecha f = new Fecha(2, 10, 1970);
+        System.out.println("Dia: " + f.getDia());
+        System.out.println("Mes: " + f.getMes());
+        System.out.println("Año: " + f.getAnio());
         System.out.println(f);
-        
-        fecha otra = new fecha(0,11,1990);
-        otra.setDia(0);
-        otra.setAnio(1990);
-        otra.setMes(11);
 
-        if (f.equals(otra))
-        {
-            System.out.println("Las fechas son iguales.");
+        Fecha f2 = new Fecha();
+        System.out.println("Clase Fecha vacia: " + f2);
+
+        Fecha f3 = new Fecha ("10/11/2022");
+        System.out.println("Clase Fecha Tipo String: " + f3);
+
+        Fecha otra = new Fecha(5, 5, 1995);
+        otra.setDia(5);
+        otra.setMes(5);
+        otra.setAnio(1995);
+
+        System.out.println(otra.equals(f));
+
+        if (otra.equals(f) == false){
+            System.out.println("Las dos fechas son diferentes");
         }
-        else
-        {
-            System.out.println("Las fechas son diferentes.");
+
+        if (otra.equals(f) == true) {
+            System.out.println("Las dos fechas son iguales");
         }
 
-        System.out.
-        
-
+        System.out.println("Punto 4");
+        Fecha f4 = new Fecha("23/12/1980");
+        f4.addDias(180);
+        System.out.println(f4);
     }
 }
