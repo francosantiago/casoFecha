@@ -1,6 +1,7 @@
 package ejecutable;
 
 import modelo.Fecha;
+import modelo.FechaHora;
 import modelo.MuestraConjunto;
 import modelo.fechaDetallada;
 
@@ -42,5 +43,8 @@ public class Test {
 
         //Como el metodo es estático lo invocamos a través de la clase
         MuestraConjunto.mostrar(arr);
+
+        FechaHora fh = new FechaHora(null, 14, 30, 10);
+        System.out.println(fh);
     }
 }
