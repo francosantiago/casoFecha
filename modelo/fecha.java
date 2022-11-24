@@ -3,9 +3,6 @@ package modelo;
 
 public class Fecha 
 {
-
-    public static final String YEAR = null;
-    public static final String MONTH = null;
     // Atributos
     protected int dia;
     protected int mes;
