@@ -9,6 +9,9 @@ public class fechaDetallada extends Fecha{
         super(d,m,y);
     }
 
+    public fechaDetallada(String sFecha) {
+    }
+
     public void fechaCompleja(int m){
         dias = anio * 360 + mes * 30 + dia;
         m = (int)(dias%360/30);
