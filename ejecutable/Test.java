@@ -38,7 +38,7 @@ public class Test {
         f4.addDias(180);
         System.out.println(f4);
 
-        Object[] arr = {new Fecha(2,10,1970). new fechaDetallada(23,12,1948), new String("Esto es una cadena"), new Integer(34)};
+        Object[] arr = {new Fecha(2,10,1970), new fechaDetallada(23,12,1948), new String("Esto es una cadena"), new Integer(34)};
 
         //Como el metodo es estático lo invocamos a través de la clase
         MuestraConjunto.mostrar(arr);
