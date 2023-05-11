@@ -1,25 +1,25 @@
 package ejecutable;
 
-import modelo.Fecha;
+import modelo.fecha;
 import modelo.FechaHora;
 import modelo.MuestraConjunto;
 import modelo.fechaDetallada;
 
 public class Test {
     public static void main(String[] args) {
-        Fecha f = new Fecha(2, 10, 1970);
+        fecha f = new fecha(2, 10, 1970);
         System.out.println("Dia: " + f.getDia());
         System.out.println("Mes: " + f.getMes());
         System.out.println("Año: " + f.getAnio());
         System.out.println(f);
 
-        Fecha f2 = new Fecha();
+        fecha f2 = new fecha();
         System.out.println("Clase Fecha vacia: " + f2);
 
-        Fecha f3 = new Fecha ("10/11/2022");
+        fecha f3 = new fecha ("10/11/2022");
         System.out.println("Clase Fecha Tipo String: " + f3);
 
-        Fecha otra = new Fecha(5, 5, 1995);
+        fecha otra = new fecha(5, 5, 1995);
         otra.setDia(5);
         otra.setMes(5);
         otra.setAnio(1995);
@@ -35,11 +35,11 @@ public class Test {
         }
 
         System.out.println("Punto 4");
-        Fecha f4 = new Fecha("23/12/1980");
+        fecha f4 = new fecha("23/12/1980");
         f4.addDias(180);
         System.out.println(f4);
 
-        Object[] arr = {new Fecha(2,10,1970), new fechaDetallada(23,12,1948), new String("Esto es una cadena"), new Integer(34)};
+        Object[] arr = {new fecha(2,10,1970), new fechaDetallada(23,12,1948), new String("Esto es una cadena"), new Integer(34)};
 
         //Como el metodo es estático lo invocamos a través de la clase
         MuestraConjunto.mostrar(arr);

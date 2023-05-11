@@ -1,6 +1,7 @@
 package modelo;
 
-public class fechaDetallada extends Fecha{
+public class fechaDetallada extends fecha
+{
 
     String mesDetallado = "";
     int dias;

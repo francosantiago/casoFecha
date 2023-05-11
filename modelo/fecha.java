@@ -1,7 +1,7 @@
 package modelo;
 
 
-public class Fecha 
+public class fecha 
 {
     // Atributos
     protected int dia;
@@ -12,7 +12,7 @@ public class Fecha
     // Constructor con 3 parametros
     /*Esto es para que en vez de usar Set para crear la fecha despues de creada la clase se crea la clase con
       esos parametros */
-    public Fecha(int d, int m, int a)
+    public fecha(int d, int m, int a)
     {
         this.dia = d;
         this.mes = m;
@@ -20,7 +20,7 @@ public class Fecha
     }
 
     // Constructor sin parametros
-    public Fecha()
+    public fecha()
     {
         this.dia = 0;
         this.mes = 0;
@@ -28,7 +28,7 @@ public class Fecha
     }
 
     // Constructor con parametro String dd/mm/aa
-    public Fecha(String s)
+    public fecha(String s)
     {
         // Buscamos la primera ocurrencia de '/'
         int pos1 = s.indexOf('/');
@@ -74,7 +74,7 @@ public class Fecha
         return dia + "/" + mes + "/" + anio;
     }
     public boolean equals(Object o){
-        Fecha otra = (Fecha)o;
+        fecha otra = (fecha)o;
         return (dia==otra.dia) && (mes == otra.mes) && (anio == otra.anio);
     }
 
@@ -94,7 +94,7 @@ public class Fecha
         dia = (int)(i%30%30);
     }
 
-    public static Fecha getInstance() {
+    public static fecha getInstance() {
         return null;
     }
 
