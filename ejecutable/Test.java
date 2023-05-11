@@ -5,15 +5,17 @@ import modelo.FechaHora;
 import modelo.MuestraConjunto;
 import modelo.fechaDetallada;
 
-public class Test {
-    public static void main(String[] args) {
+public class Test 
+{
+    public static void main(String[] args) 
+    {
         fecha f = new fecha(2, 10, 1970);
         System.out.println("Dia: " + f.getDia());
         System.out.println("Mes: " + f.getMes());
         System.out.println("Año: " + f.getAnio());
         System.out.println(f);
 
-        fecha f2 = new fecha();
+        fecha f2 = new fecha(11,05,2023);
         System.out.println("Clase Fecha vacia: " + f2);
 
         fecha f3 = new fecha ("10/11/2022");
@@ -26,11 +28,13 @@ public class Test {
 
         System.out.println(otra.equals(f));
 
-        if (otra.equals(f) == false){
+        if (otra.equals(f) == false)
+        {
             System.out.println("Las dos fechas son diferentes");
         }
 
-        if (otra.equals(f) == true) {
+        if (otra.equals(f) == true) 
+        {
             System.out.println("Las dos fechas son iguales");
         }
 
